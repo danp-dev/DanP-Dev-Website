@@ -9,7 +9,7 @@ import avatar from "../images/DanP-Avatar.svg"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Dan P </Dev>" />
     
     <section class="hero is-white has-text-centered">
       <div class="hero-body">
