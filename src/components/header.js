@@ -27,8 +27,8 @@ const Header = ({ siteTitle }) => (
     <div className="navbar-end">
       <div className="navbar-item">
         <div className="buttons">
-          <a className="button is-primary">
-            <strong>Say Hello!
+          <a className="button is-primary has-text-white">
+          <strong><Link to="/contact/">Say Hello</Link>
             </strong>
           </a>
         </div>
