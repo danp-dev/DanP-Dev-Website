@@ -101,7 +101,7 @@ const IndexPage = () => (
     </section>
     
     <section className="section is-medium is-white has-text-centered">
-
+<div className="container is-narrow">
     <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">Some Recent Work</h1>
     <h3 class="subtitletitle is-spaced is-size-5-desktop is-size-4-mobile">Here are some projects I have recently created. Want to work together? Let's <a>book in a chat</a></h3>
 
@@ -125,7 +125,7 @@ const IndexPage = () => (
         <div className="box">Project 6</div>
         </div>
         </div>
-
+</div>
     </section>
 
 
