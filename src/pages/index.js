@@ -9,7 +9,7 @@ import avatar from "../images/DanP-Avatar.svg"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Dan P </Dev>" />
     
     <section class="hero is-white has-text-centered is-100-vh">
       <div class="hero-body">
@@ -29,7 +29,7 @@ const IndexPage = () => (
         <div className="columns is-centered py-6">
           <div className="column is-three-fifths">
             <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile has-text-white">Hi, I’m Dan. It's awesome to meet you!</h1>
-            <h2 className="subtitle is-size-5-desktop has-text-white">Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</h2>
+            <h2 className="subtitle is-size-5-desktop has-text-white">Since beginning my journey as a freelance developer, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</h2>
           </div>
         </div>
       </div>
