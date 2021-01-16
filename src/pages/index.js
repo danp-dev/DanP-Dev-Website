@@ -11,12 +11,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     
-    <section class="hero is-white has-text-centered">
+    <section class="hero is-white has-text-centered is-100-vh">
       <div class="hero-body">
       <div className="container">
           <div className="columns is-centered">
             <div className="column">
-              <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Developer, Builder, Tech Lover.</h1>
+              <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Solution Architect, Developer, Tech Lover.</h1>
               <h2 className="subtitle is-size-4-desktop">I design and code awesome things and I love doing it.</h2><img class="avatar" src={avatar}/>
             </div>
           </div>
@@ -100,12 +100,47 @@ const IndexPage = () => (
       </div>
     </section>
     
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+    <section className="section is-medium is-white has-text-centered">
+
+    <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">Some Recent Work</h1>
+    <h3 class="subtitletitle is-spaced is-size-5-desktop is-size-4-mobile">Here are some projects I have recently created. Want to work together? Let's <a>book in a chat</a></h3>
+
+      <div className="columns is-multiline is-mobile">
+        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
+          <div className="box">Project 1</div>
+        </div>
+        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
+        <div className="box">Project 2</div>
+        </div>
+        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
+        <div className="box">Project 3</div>
+        </div>
+        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
+          <div className="box">Project 4</div>
+        </div>
+        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
+        <div className="box">Project 5</div>
+        </div>
+        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
+        <div className="box">Project 6</div>
+        </div>
+        </div>
+
+    </section>
+
+
+    <section className="section is-medium is-white has-text-centered">
+
+<h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">TESTIMONIALS</h1>
+<h3 class="subtitletitle is-spaced is-size-5-desktop is-size-4-mobile">I have worked with some amazing clients!</h3>
+
+  <div className="container is-medium is-primary">
+    ADD TESTIMONIALS HERE
+  </div>
+
+</section>
+
+    
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
