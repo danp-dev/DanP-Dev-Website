@@ -6,6 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 import avatar from "../images/DanP-Avatar.svg"
+import devices from "../images/devices.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -17,11 +18,16 @@ const IndexPage = () => (
           <div className="columns is-centered">
             <div className="column">
               <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Solution Architect, Developer, Tech Lover.</h1>
-              <h2 className="subtitle is-size-4-desktop">I design and code awesome things and I love doing it.</h2><img class="avatar" src={avatar}/>
+              <h2 className="subtitle is-size-4-desktop">I design and code awesome things and I love doing it.</h2><img className="avatar" src={avatar}/>
             </div>
-          </div>
+            
+          
         </div>
       </div>
+
+      </div><div className="container">
+            <img className="avatar" src={devices}/>
+            </div>
     </section>
 
     <section className="section is-medium has-background-primary has-text-centered has-text-white">

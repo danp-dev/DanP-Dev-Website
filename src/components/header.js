@@ -1,11 +1,18 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React,{ useState } from "react"
 
 import logo from "../images/Dan-P-Dev-Logo.svg"
 
-const Header = ({ siteTitle }) => (
+
+const Header = ({ siteTitle }) => {
+  const [ismobtrue, setmobmenu] = useState(false);
+  
+
+
+  return (
   <header>
+
 <nav className="navbar" role="navigation" aria-label="main navigation">
   <container className="container">
   <div className="navbar-brand">
@@ -13,7 +20,7 @@ const Header = ({ siteTitle }) => (
       <img src={logo}/>
     </a>
 
-    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <a role="button" onClick={() => setmobmenu(!ismobtrue)} className={ismobtrue ? 'navbar-burger' : 'navbar-burger'} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -27,10 +34,12 @@ const Header = ({ siteTitle }) => (
     <div className="navbar-end">
       <div className="navbar-item">
         <div className="buttons">
-          <a className="button is-primary has-text-white">
+          <button className="button is-primary has-text-white">
           <strong><Link to="/contact/">Say Hello</Link>
             </strong>
-          </a>
+          </button>
+          <button  >
+          MOBILE {ismobtrue}</button>
         </div>
       </div>
     </div>
@@ -38,7 +47,9 @@ const Header = ({ siteTitle }) => (
   </container>
 </nav>
 </header>
-)
+
+);
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
