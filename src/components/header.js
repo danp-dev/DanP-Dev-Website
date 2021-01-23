@@ -6,9 +6,6 @@ import logo from "../images/Dan-P-Dev-Logo.svg"
 
 
 const Header = ({ siteTitle }) => {
-  const [ismobtrue, setmobmenu] = useState(false);
-  
-
 
   return (
   <header>
@@ -20,11 +17,6 @@ const Header = ({ siteTitle }) => {
       <img src={logo}/>
     </a>
 
-    <a role="button" onClick={() => setmobmenu(!ismobtrue)} className={ismobtrue ? 'navbar-burger' : 'navbar-burger'} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
   </div>
 
   <div id="navbarBasicExample" className="navbar-menu">
@@ -33,13 +25,13 @@ const Header = ({ siteTitle }) => {
 </div>
     <div className="navbar-end">
       <div className="navbar-item">
-        <div className="buttons">
-          <button className="button is-primary has-text-white">
-          <strong><Link to="/contact/">Say Hello</Link>
-            </strong>
-          </button>
-          <button  >
-          MOBILE {ismobtrue}</button>
+        <div className="buttons navbar-buttons">
+
+            <Link className="button is-outlined is-link" to="/contact/">Blog</Link>
+
+            <Link className="button is-link" to="/contact/">Say Hello</Link>
+          
+
         </div>
       </div>
     </div>

@@ -12,6 +12,10 @@ const Contact = () => (
         <div className="containter has-text-centered">
       <h1 className="title is-size-3"> Thanks for taking the time to reach out. How can I help you today?</h1>
       </div>
+      
+      <div class="columns is-mobile is-centered">
+      <div className="column is-12-mobile is-half-tablet is-half-desktop">
+      
       <form name="contact" method="POST" data-netlify="true">
 
       <div className="field">
@@ -100,7 +104,8 @@ const Contact = () => (
 </div>
 
 </form>
-
+</div>
+</div>
 </div>
 </section>
     <Link to="/">Go back to the homepage</Link>

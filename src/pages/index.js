@@ -43,7 +43,7 @@ const IndexPage = () => (
 
     <section className="section skills has-text-centered">
       <div className="container is-narrow">
-        <div className="box">
+        <div className="box skills-box">
           <div className="content">
             <div className="columns is-centered">
               <div className="column">
@@ -111,15 +111,15 @@ const IndexPage = () => (
     <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">Some Recent Work</h1>
     <h3 class="subtitletitle is-spaced is-size-5-desktop is-size-4-mobile">Here are some projects I have recently created. Want to work together? Let's <a>book in a chat</a></h3>
 
-      <div className="columns is-multiline is-mobile">
+      <div className="columns is-multiline is-mobile py-6">
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-          <div className="box">Project 1</div>
+          <div className="box">Kenzi's Photography</div>
         </div>
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-        <div className="box">Project 2</div>
+        <div className="box">Spectrum OT</div>
         </div>
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-        <div className="box">Project 3</div>
+        <div className="box">Gawler Childare & Preschool</div>
         </div>
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
           <div className="box">Project 4</div>
@@ -134,14 +134,57 @@ const IndexPage = () => (
 </div>
     </section>
 
-
     <section className="section is-medium is-white has-text-centered">
 
 <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">TESTIMONIALS</h1>
 <h3 class="subtitletitle is-spaced is-size-5-desktop is-size-4-mobile">I have worked with some amazing clients!</h3>
 
   <div className="container is-medium is-primary">
-    ADD TESTIMONIALS HERE
+    <div className="tile is-ancestor">
+  <div className="tile is-vertical is-8">
+    <div className="tile">
+      <div className="tile is-parent is-vertical">
+        <article className="tile is-child box">
+          <p className="title">Vertical...</p>
+          <p className="subtitle">Top tile</p>
+        </article>
+        <article className="tile is-child box">
+          <p className="title">...tiles</p>
+          <p className="subtitle">Bottom tile</p>
+        </article>
+      </div>
+      <div className="tile is-parent">
+        <article className="tile is-child box">
+          <p className="title">Middle tile</p>
+          <p className="subtitle">With an image</p>
+          <figure className="image is-4by3">
+            <img src={avatar}/>
+          </figure>
+        </article>
+      </div>
+    </div>
+    <div className="tile is-parent">
+      <article className="tile is-child box">
+        <p className="title">Wide tile</p>
+        <p className="subtitle">Aligned with the right tile</p>
+        <div className="content">
+          <p>Wooo  Hoooo!</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div className="tile is-parent">
+    <article className="tile is-child box">
+      <div className="content">
+        <p className="title">Tall tile</p>
+        <p className="subtitle">With even more content</p>
+        <div className="content">
+        <p>Wooo  Hoooo!</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
   </div>
 
 </section>
