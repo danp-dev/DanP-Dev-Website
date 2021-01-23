@@ -6,7 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 import avatar from "../images/DanP-Avatar.svg"
-import devices from "../images/devices.svg"
+import devices from "../images/devices-large.svg"
 
 const IndexPage = () => (
   <Layout>
