@@ -8,6 +8,8 @@ import SEO from "../components/seo"
 import avatar from "../images/DanP-Avatar.svg"
 import devices from "../images/devices-large.svg"
 
+import clientkenzi from "../images/clients-kenzisphotography.png"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Dan P </Dev>" />
@@ -113,7 +115,9 @@ const IndexPage = () => (
 
       <div className="columns is-multiline is-mobile py-6">
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-          <div className="box">Kenzi's Photography</div>
+          <div className="box">
+          <img className="avatar" src={clientkenzi}/>
+          </div>
         </div>
         <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
         <div className="box">Spectrum OT</div>
@@ -137,15 +141,15 @@ const IndexPage = () => (
     <section className="section is-medium is-white has-text-centered">
 
 <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">TESTIMONIALS</h1>
-<h3 class="subtitletitle is-spaced is-size-5-desktop is-size-4-mobile">I have worked with some amazing clients!</h3>
+<h3 class="subtitletitle is-spaced is-size-5-desktop is-size-4-mobile py-3">I have worked with some amazing clients!</h3>
 
-  <div className="container is-medium is-primary">
+  <div className="container is-medium is-primary py-6">
     <div className="tile is-ancestor">
   <div className="tile is-vertical is-8">
     <div className="tile">
       <div className="tile is-parent is-vertical">
         <article className="tile is-child box">
-          <p className="title">Vertical...</p>
+          <p className="title">SO Professional!</p>
           <p className="subtitle">Top tile</p>
         </article>
         <article className="tile is-child box">
@@ -189,9 +193,26 @@ const IndexPage = () => (
 
 </section>
 
-    
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+<section className="is-small">
+  <div className="container is-primary is-narrow">
+    <div className="box has-background-primary py-6 px-6">
+    <div className="columns level">
+      <div className="column level-item has-text-centered">
+        <h1 className="title is-4 has-text-white">Start a Project</h1>
+      </div>
+      <div className="column level-item has-text-centered">
+        <p className="has-text-white">Interested in working together?
+        We should queue up a chat.
+        I’ll buy the coffee.</p>
+      </div>
+      <div className="column level-item has-text-centered">
+        <Link to="/contact/" className="button is-link is-outlined is-rounded is-inverted">Let's Chat!</Link>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
   </Layout>
 )
 
