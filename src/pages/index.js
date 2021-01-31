@@ -197,7 +197,7 @@ const IndexPage = () => (
 
 <section className="is-small">
   <div className="container is-primary is-narrow">
-    <div className="box has-background-primary py-6 px-6">
+    <div className="box has-background-primary py-6 px-6 my-3">
     <div className="columns level">
       <div className="column level-item has-text-centered">
         <h1 className="title is-4 has-text-white">Start a Project</h1>
