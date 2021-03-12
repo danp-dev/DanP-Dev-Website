@@ -17,6 +17,7 @@ const Contact = () => (
       <div className="column is-12-mobile is-half-tablet is-half-desktop">
       
       <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact"/>
 
       <div className="field">
   <label className="label">Name</label>
