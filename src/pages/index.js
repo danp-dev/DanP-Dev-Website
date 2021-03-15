@@ -51,8 +51,8 @@ const IndexPage = () => (
       <div className="column is-half-desktop is-offset-one-quarter-desktop is-three-full-mobile">
       <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile has-text-gray has-text-centered">Hi, I’m Dan. It's awesome to meet you!</h1>
 
-      <form name="contact" method="POST" data-netlify="true" action="/thanksforbooking/">
-      <input type="hidden" name="form-name" value="contact"/>
+      <form name="bookachat" method="POST" data-netlify="true" action="/thanksforbooking/">
+      <input type="hidden" name="form-name" value="bookachat"/>
   <p className="py-3">
     <label className="label">Your Name: <input type="text" className="input" name="name" /></label>   
   </p>
@@ -63,7 +63,7 @@ const IndexPage = () => (
     <label className="label">Your Phone Number: <input type="phone" className="input" name="date"/></label>
   </p>
   <p className="py-3">
-    <label className="label">Message: <textarea name="message" className="textarea"></textarea></label>
+    <label className="label">Info about your project: <textarea name="projectinfo" className="textarea"></textarea></label>
   </p>
   <p className="py-3">
     <button type="submit" className="button">Book A Chat</button>
