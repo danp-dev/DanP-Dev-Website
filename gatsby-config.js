@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Developer Adelaide | Tech Lover`,
     description: `Kick off your next awesome project with me!.`,
+    siteUrl: `https://www.danp.dev`,
     author: `@danpdev`,
   },
   plugins: [
@@ -15,6 +16,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

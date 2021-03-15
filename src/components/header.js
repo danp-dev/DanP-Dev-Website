@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => {
 <nav className="navbar" role="navigation" aria-label="main navigation">
   <container className="container">
   <div className="navbar-brand">
-    <a className="navbar-item" href="https://danp.dev">
+    <a className="navbar-item" href="/">
       <img src={logo}/>
     </a>
 
@@ -27,9 +27,7 @@ const Header = ({ siteTitle }) => {
       <div className="navbar-item">
         <div className="buttons navbar-buttons">
 
-            <Link className="button is-outlined is-link" to="/contact/">Blog</Link>
-
-            <Link className="button is-link" to="/contact/">Say Hello</Link>
+            <Link className="button is-link" to="#bookachat">Book A Chat</Link>
           
 
         </div>

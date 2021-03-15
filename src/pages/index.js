@@ -12,7 +12,7 @@ import clientkenzi from "../images/clients-kenzisphotography.png"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Dan P </Dev>" />
+    <SEO title="Dan P </Dev> | Web Developer Adelaide" />
     
     <section class="hero is-white has-text-centered is-100-vh">
       <div class="hero-body">
@@ -45,100 +45,37 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="section skills has-text-centered">
-      <div className="container is-narrow">
-        <div className="box skills-box">
-          <div className="content">
-            <div className="columns is-centered">
-              <div className="column">
-                <figure className="image"><i className="fas fa-edit fa-3x"></i></figure>
-                <h1 className="title is-size-4 is-spaced">Designer</h1>
-                <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-                <p className="list-title has-text-primary has-text-weight-normal">Things I enjoy designing:</p>
-                <p>UX, UI, Web, Mobile, Apps, Logos</p>
-                <p className="list-title has-text-primary has-text-weight-normal">Design Tools:</p>
-                <ul>
-                  <li>Balsamiq Mockups</li>
-                  <li>Figma</li>
-                  <li>Invision</li>
-                  <li>Marvel</li>
-                  <li>Pen &amp; Paper</li>
-                  <li>Sketch</li>
-                  <li>Webflow</li>
-                  <li>Zeplin</li>
-                </ul>
-              </div>
-              <div className="column">
-                <figure className="image"><i className="fas fa-code fa-3x"></i></figure>
-                <h1 className="title is-size-4 is-spaced">Front-end Developer</h1>
-                <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                <p className="list-title has-text-primary has-text-weight-normal">Languages I speak:</p>
-                <p>HTML, Pug, Slim, CSS, Sass, Less</p>
-                <p className="list-title has-text-primary has-text-weight-normal">Dev Tools:</p>
-                <ul>
-                  <li>Atom</li>
-                  <li>Bitbucket</li>
-                  <li>Bootstrap</li>
-                  <li>Bulma</li>
-                  <li>Codekit</li>
-                  <li>Codepen</li>
-                  <li>Github</li>
-                  <li>Gitlab</li>
-                  <li>Terminal</li>
-                </ul>
-              </div>
-              <div className="column"> 
-                <figure className="image"><i className="fas fa-laptop-code fa-3x"></i></figure>
-                <h1 className="title is-size-4 is-spaced">Mentor</h1>
-                <p>I genuinely care about people, and love helping fellow designers work on their craft.</p>
-                <p className="list-title has-text-primary has-text-weight-normal">Experiences I draw from:</p>
-                <p>UX/UI, Product design, Freelancing</p>
-                <p className="list-title has-text-primary has-text-weight-normal">Mentor Stats:</p>
-                <ul>
-                  <li>5 years experience</li>
-                  <li>26 short courses</li>
-                  <li>42 bootcamps</li>
-                  <li>125+ students</li>
-                  <li>1,400+ mentor sessions</li>
-                  <li>60+ group critiques</li>
-                  <li>12,000+ comments</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section className="section" id="bookachat">
+        
+      <div className="columns is-mobile">
+      <div className="column is-half-desktop is-offset-one-quarter-desktop is-three-full-mobile">
+      <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile has-text-gray has-text-centered">Hi, I’m Dan. It's awesome to meet you!</h1>
+
+      <form name="contact" method="POST" data-netlify="true" action="/thanksforbooking/">
+      <input type="hidden" name="form-name" value="contact"/>
+  <p className="py-3">
+    <label className="label">Your Name: <input type="text" className="input" name="name" /></label>   
+  </p>
+  <p className="py-3">
+    <label className="label">Your Email: <input type="email" className="input" name="email" /></label>
+  </p>
+  <p className="py-3">
+    <label className="label">Your Phone Number: <input type="phone" className="input" name="date"/></label>
+  </p>
+  <p className="py-3">
+    <label className="label">Message: <textarea name="message" className="textarea"></textarea></label>
+  </p>
+  <p className="py-3">
+    <button type="submit" className="button">Book A Chat</button>
+  </p>
+</form>
+
+
+      </div>
       </div>
     </section>
     
-    <section className="section is-medium is-white has-text-centered">
-<div className="container is-narrow">
-    <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">Some Recent Work</h1>
-    <h3 class="subtitletitle is-spaced is-size-5-desktop is-size-4-mobile">Here are some projects I have recently created. Want to work together? Let's <a>book in a chat</a></h3>
 
-      <div className="columns is-multiline is-mobile py-6">
-        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-          <div className="box">
-          <img className="avatar" src={clientkenzi}/>
-          </div>
-        </div>
-        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-        <div className="box">Spectrum OT</div>
-        </div>
-        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-        <div className="box">Gawler Childare & Preschool</div>
-        </div>
-        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-          <div className="box">Project 4</div>
-        </div>
-        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-        <div className="box">Project 5</div>
-        </div>
-        <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
-        <div className="box">Project 6</div>
-        </div>
-        </div>
-</div>
-    </section>
 
     <section className="section is-medium is-white has-text-centered">
 
@@ -151,30 +88,27 @@ const IndexPage = () => (
     <div className="tile">
       <div className="tile is-parent is-vertical">
         <article className="tile is-child box">
-          <p className="title">SO Professional!</p>
-          <p className="subtitle">Top tile</p>
+          <p className="title">So Professional!</p>
+          <p className="subtitle">Thanks Dan for all your work on our site!</p>
         </article>
         <article className="tile is-child box">
-          <p className="title">...tiles</p>
-          <p className="subtitle">Bottom tile</p>
+          <p className="title">Very Pleased</p>
+          <p className="subtitle">Dan was easy to work with and got us setup with a great website</p>
         </article>
       </div>
       <div className="tile is-parent">
         <article className="tile is-child box">
-          <p className="title">Middle tile</p>
-          <p className="subtitle">With an image</p>
-          <figure className="image is-4by3">
-            <img src={avatar}/>
-          </figure>
+          <p className="title">Exceeded our expectations</p>
+          <p className="subtitle">Dan went above and beyond to get our project finished on time</p>
         </article>
       </div>
     </div>
     <div className="tile is-parent">
       <article className="tile is-child box">
-        <p className="title">Wide tile</p>
-        <p className="subtitle">Aligned with the right tile</p>
+        <p className="title">Our new website is actually getting traffic!</p>
+        <p className="subtitle"></p>
         <div className="content">
-          <p>Wooo  Hoooo!</p>
+          <p>Dan helped us implement a sound strategy that is getting our website regular visits</p>
         </div>
       </article>
     </div>
@@ -182,8 +116,11 @@ const IndexPage = () => (
   <div className="tile is-parent">
     <article className="tile is-child box">
       <div className="content">
-        <p className="title">Tall tile</p>
-        <p className="subtitle">With even more content</p>
+        <p className="title">Quick turnaround, high quality</p>
+        <p className="subtitle">Dan was easy to work with. He turned our site around quickly 
+        the finished product was absoluty perfect!
+        
+        </p>
         <div className="content">
         <p>Wooo  Hoooo!</p>
         </div>
@@ -194,7 +131,6 @@ const IndexPage = () => (
   </div>
 
 </section>
-
 <section className="is-small">
   <div className="container is-primary is-narrow">
     <div className="box has-background-primary py-6 px-6 my-3">
@@ -208,7 +144,7 @@ const IndexPage = () => (
         I’ll buy the coffee.</p>
       </div>
       <div className="column level-item has-text-centered">
-        <Link to="/contact/" className="button is-link is-outlined is-rounded is-inverted">Let's Chat!</Link>
+        <Link to="#bookachat" className="button is-link is-outlined is-rounded is-inverted">Let's Chat!</Link>
       </div>
     </div>
     </div>
